@@ -1,6 +1,16 @@
 import React, { Component } from "react";
 import { Modal, Container, Row, Col } from "react-bootstrap";
 
+const defaultState = {
+  email: "",
+  name: "",
+  phoneno: "",
+  noOfLeads: 0,
+  totalLeads: 0,
+  crm: "Squad",
+  noOfAgents: 0,
+};
+
 class PriceCardModel extends Component {
   leadSources = {
     zillow: false,
@@ -8,24 +18,18 @@ class PriceCardModel extends Component {
     ylopo: false,
     others: false,
   };
+
   howTheyKnowUs = {
-    goole: false,
+    google: false,
     facebook: false,
     email: false,
     friends: false,
     realClosers: false,
   };
+
   constructor(props) {
     super(props);
-    this.state = {
-      email: "",
-      name: "",
-      phoneno: "",
-      noOfLeads: 0,
-      totalLeads: 0,
-      crm: "",
-      noOfAgents: 0,
-    };
+    this.state = defaultState;
   }
 
   handleLeadSourceChange = (key) => {
@@ -55,13 +59,16 @@ class PriceCardModel extends Component {
       "How they know about us: " +
       this.getObjectDataAsString(this.howTheyKnowUs);
     alert(result);
+    this.setState({
+      ...defaultState,
+    });
     this.props.onHide();
   };
 
   getObjectDataAsString(object) {
     let result = "";
     for (const key in object) {
-      if (this.leadSources[key]) {
+      if (object[key]) {
         result += `${key} `;
       }
     }

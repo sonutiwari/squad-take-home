@@ -1,0 +1,19 @@
+.orangeTheme {
+  border: 1px solid #ef5a35;
+  color: #ef5a35;
+  background-color: white;
+}
+
+.orangeTheme:hover {
+  color: #fff;
+  background-color: #ef5a35;
+}
+
+.orangeTheme:focus {
+  outline: none;
+}
+
+.solid.orangeTheme {
+  background-color: #ef5a35;
+  color: #fff;
+}

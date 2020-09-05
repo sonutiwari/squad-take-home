@@ -6,13 +6,13 @@ export const head = {
   marginBottom: "0.5rem",
   display: "flex",
   justifyContent: "center",
-  height: "2em",
+  height: "3em",
 };
 
 export const bottom = { ...head };
 
 export const largeFont = {
-  fontSize: "2.3rem",
+  fontSize: "2rem",
   fontWeight: "600",
   letterSpacing: "1px",
   height: "2em",
@@ -21,12 +21,12 @@ export const largeFont = {
 export const mediumFont = {
   fontSize: "1.2rem",
   fontWeight: "500",
-  height: "1.2em",
+  height: "3em",
 };
 
 export const smallFont = {
   fontSize: "0.9rem",
-  height: "1em",
+  height: "1.1em",
 };
 
 export const separator = {
@@ -36,10 +36,10 @@ export const separator = {
 };
 
 export const popularPriceCard = {
-  backgroundColor: "orange",
+  backgroundColor: "rgb(222, 99, 67)",
   color: "#FFF",
   display: "flex",
   justifyContent: "center",
   padding: "1rem",
-  height: "2em",
+  height: "3em",
 };

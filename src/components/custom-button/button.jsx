@@ -1,5 +1,5 @@
 import React from "react";
-import "./button.css";
+import "./button.scss";
 
 const defaultStyle = {
   display: "flex",
@@ -15,17 +15,15 @@ const defaultStyle = {
 const CustomButton = (props) => {
   const getClassNames = () => {
     let classNames = "orangeTheme";
-
     if (props.solid) {
       classNames += " solid";
     }
-
     return classNames;
   };
   return (
     <button
       data-testid={props["data-testid"]}
-      style={{ ...defaultStyle, ...props.style }}
+      style={{ ...defaultStyle, ...props.style, height: "3em" }}
       className={getClassNames()}
       onClick={props.click}
     >

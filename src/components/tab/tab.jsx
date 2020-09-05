@@ -6,7 +6,7 @@ import {
   selectedTab,
   tabContent,
 } from "./tab.style";
-import "./tab.css";
+import "./tab.scss";
 
 const Tabs = (incomingProps) => {
   const props = { ...incomingProps };

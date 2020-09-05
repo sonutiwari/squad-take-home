@@ -119,7 +119,7 @@ class PriceCardModel extends Component {
                   required
                 />
               </Row>
-
+              <br />
               <Row>
                 <Col xs={12} md={6}>
                   <label htmlFor="email">E-mail Address</label>
@@ -155,7 +155,7 @@ class PriceCardModel extends Component {
                   />
                 </Col>
               </Row>
-
+              <br />
               <Row>
                 <Col xs={12} md={6}>
                   <label htmlFor="noOfLeads">
@@ -193,7 +193,7 @@ class PriceCardModel extends Component {
                   />
                 </Col>
               </Row>
-
+              <br />
               <Row>
                 <Col xs={12} md={6}>
                   <label htmlFor="crm">Which CRM Do you use?</label>
@@ -228,7 +228,7 @@ class PriceCardModel extends Component {
                   />
                 </Col>
               </Row>
-
+              <br />
               <Row style={{ marginLeft: "1%", marginRight: "1%" }}>
                 <label htmlFor="totalLeads">
                   What are your biggest lead sources?
@@ -282,7 +282,7 @@ class PriceCardModel extends Component {
                   </label>
                 </div>
               </Row>
-
+              <br />
               <Row style={{ marginLeft: "1%", marginRight: "1%" }}>
                 <label htmlFor="totalLeads">How did you hear about us</label>
                 <div
@@ -350,8 +350,9 @@ class PriceCardModel extends Component {
               <Row>
                 <input
                   type="submit"
-                  className="btn btn-primary"
+                  className="btn"
                   value="submit"
+                  style={{ backgroundColor: "#ef5a35", color: "#fff" }}
                 />
               </Row>
             </form>

@@ -52,7 +52,7 @@ const PriceCard = (incomingProps) => {
 
   return (
     <>
-      <div style={style}>
+      <div style={style} className="col-sm-12 col-md-3">
         <PriceCardModal
           planName={planName}
           show={showModal}

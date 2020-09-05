@@ -100,12 +100,15 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-- [ReactJS](https://reactjs.org) - Front end library
+- [NodeJs](https://nodejs.org/en/) - Server Environment.
+- [ReactJS](https://reactjs.org) - Front end library.
+- [React-Bootstrap](https://react-bootstrap.github.io/) - React Bootstrap for bootstrap library.
+- [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Bootstrap library.
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@sonutiwari](https://github.com/sonutiwari) - Initial work
+- [@sonutiwari](https://github.com/sonutiwari) - Initial work.
+- [@varora1406](https://github.com/varora1406) - Got a lot of understanding from here.
 
 See also the list of [contributors](https://github.com/sonutiwari/squad-take-home/contributors) who participated in this project.
 

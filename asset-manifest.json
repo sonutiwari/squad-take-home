@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/squad-take-home/static/css/main.671455e4.chunk.css",
+    "main.js": "/squad-take-home/static/js/main.23a40913.chunk.js",
+    "main.js.map": "/squad-take-home/static/js/main.23a40913.chunk.js.map",
+    "runtime-main.js": "/squad-take-home/static/js/runtime-main.8f65adfb.js",
+    "runtime-main.js.map": "/squad-take-home/static/js/runtime-main.8f65adfb.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/squad-take-home/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.5ec7851f.chunk.js": "/squad-take-home/static/js/2.5ec7851f.chunk.js",
+    "static/js/2.5ec7851f.chunk.js.map": "/squad-take-home/static/js/2.5ec7851f.chunk.js.map",
+    "index.html": "/squad-take-home/index.html",
+    "precache-manifest.54d1f809e3ee0b667671fd1d990fa034.js": "/squad-take-home/precache-manifest.54d1f809e3ee0b667671fd1d990fa034.js",
+    "service-worker.js": "/squad-take-home/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/squad-take-home/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.671455e4.chunk.css.map": "/squad-take-home/static/css/main.671455e4.chunk.css.map",
+    "static/js/2.5ec7851f.chunk.js.LICENSE.txt": "/squad-take-home/static/js/2.5ec7851f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f65adfb.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.5ec7851f.chunk.js",
+    "static/css/main.671455e4.chunk.css",
+    "static/js/main.23a40913.chunk.js"
+  ]
+}

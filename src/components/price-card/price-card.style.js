@@ -15,18 +15,19 @@ export const largeFont = {
   fontSize: "2rem",
   fontWeight: "600",
   letterSpacing: "1px",
-  height: "2em",
+  height: "1.2em",
 };
 
 export const mediumFont = {
   fontSize: "1.2rem",
   fontWeight: "500",
   height: "3em",
+  marginTop: "1em",
 };
 
 export const smallFont = {
   fontSize: "0.9rem",
-  height: "1.1em",
+  height: "0.9em",
 };
 
 export const separator = {

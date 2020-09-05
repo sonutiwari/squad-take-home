@@ -161,7 +161,11 @@ const PriceCard = (incomingProps) => {
           </CustomButton>
         </center>
       </div>
-      <PriceCardModal show={showModal} onHide={() => setModalState(false)} />
+      <PriceCardModal
+        planName={planName}
+        show={showModal}
+        onHide={() => setModalState(false)}
+      />
     </>
   );
 };

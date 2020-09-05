@@ -8,8 +8,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/sonutiwari/squad-take-home.svg)](https://github.com/sonutiwari/squad-take-home/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/sonutiwari/squad-take-home.svg)](https://github.com/sonutiwari/squad-take-home/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -34,61 +34,65 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+A single page application for pricing demo of a real estate company.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
+- NodeJS version 12+ (tested on 12.18.3)
+- version of NPM with the node will be sufficient.
+- Browser (Program is tested on Chrome Version 85.0.4183.83 (Official Build) (64-bit) for MacOS(will test it for other browsers and update here.))
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+Follow these steps to install and run app:
 
-Say what the step will be
+- clone the respository.
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+```console
+git clone https://github.com/sonutiwari/squad-take-home.git
+cd squad-take-home
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+Alternatively, you can download the zip file and extract that into your working directory. Open command prompt there and follow the next steps.
+
+- Run command to install the dependencies.
+
+```console
+npm install
+```
+
+If everything completed without error so far, you are ready to run the application.
+
+- Run command
+
+```console
+npm start
+```
+
+You can open your browser and give this URL [localhost](http://127.0.0.1:3000)
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
-Explain how to run the automated tests for this system.
+NA
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
+None for now.
 
 ### And coding style tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
+None for now.
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+It is a single page website.
+Once the page is loaded you can select the budget range from top tab.
+after that corresponding pricing options will be shown.
+You can select option of your choice and proceed.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
@@ -96,19 +100,15 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
+- [ReactJS](https://reactjs.org) - Front end library
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [@sonutiwari](https://github.com/sonutiwari) - Initial work
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/sonutiwari/squad-take-home/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- - [@kylelobo](https://github.com/kylelobo) - README template.

@@ -1,6 +1,6 @@
 import React from "react";
 import "./button.scss";
-
+// Default button style.
 const defaultStyle = {
   display: "flex",
   justifyContent: "center",
@@ -12,6 +12,11 @@ const defaultStyle = {
   fontSize: "1.1rem",
 };
 
+/**
+ * The componet to render a custom Button.
+ * @param {object} props : Properties of a react component.
+ * @returns {React.Component} A button Component with custom styling.
+ */
 const CustomButton = (props) => {
   const getClassNames = () => {
     let classNames = "orangeTheme";

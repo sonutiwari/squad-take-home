@@ -53,10 +53,13 @@ export default class PricePage extends Component {
   };
 
   render() {
-    const headers = this.getTabHeaders();
+    const headers = this.getTabHeaders(); // Get all the headers.
     return (
       <Tabs>
-        {headers.map((header, index) => (
+        {headers.map((
+          header,
+          index // Map headers to tabs.
+        ) => (
           <Tab
             key={index}
             name={header}
@@ -67,13 +70,13 @@ export default class PricePage extends Component {
                 : ""
             }
           >
-            {this.getTabData(header)
+            {this.getTabData(header) // filter data of each header.
               .filter(
                 ({ planDetails: { planName } }) =>
                   planName !== CONSTANTS.FILTER_PLAN_NAME
               )
               .map((data, index) => (
-                <PriceCard key={index} data={data.planDetails} />
+                <PriceCard key={index} data={data.planDetails} /> // Psedo render tabs(not visible on UI yet unless tab is active.)
               ))}
             {
               <PriceCard /* Enterprise Card which is an outlier. */

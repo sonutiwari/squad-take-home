@@ -2,7 +2,11 @@ import React from "react";
 import { Modal, Container } from "react-bootstrap";
 import UserForm from "../user-form/user-form";
 
-function PriceCardModel(props) {
+/**
+ * The function will render Price card.
+ * @param {React.props} props : Object with properties(React)
+ */
+export default function PriceCardModel(props) {
   return (
     <Modal
       {...props}
@@ -28,5 +32,3 @@ function PriceCardModel(props) {
     </Modal>
   );
 }
-
-export default PriceCardModel;

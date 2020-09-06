@@ -8,11 +8,20 @@ import {
 } from "./tab.style";
 import "./tab.scss";
 
-const Tabs = (incomingProps) => {
-  const props = { ...incomingProps };
+/**
+ * The component which will render multiple tabs inside it.
+ * @param {React.props} incomingProps : Group of tabs as children.
+ * @returns A component which will render all the tabs passed to it.
+ */
+const Tabs = (props) => {
+  // Set local state and hooks.
   const [selectedIndex, setIndex] = useState(0);
   const [children, setChildren] = useState(props.children);
 
+  /**
+   * Update tabs with latest data.
+   * @param {React.props.Children} children
+   */
   const updateInsideTabsProp = (children) => {
     const childrenClone = children.map((child) =>
       React.cloneElement(child, { insideTabs: true })
@@ -20,6 +29,10 @@ const Tabs = (incomingProps) => {
     setChildren(childrenClone);
   };
 
+  /**
+   * Find selected tab to highlight it.
+   * @param {React.props.Children} children
+   */
   const findSelectedTabIndex = (children) => {
     const isTabSelected = (reactElement) => reactElement.props.selected;
     const childrenArray = React.Children.toArray(children);
@@ -38,6 +51,12 @@ const Tabs = (incomingProps) => {
     return children.map(updateSelectedProp);
   };
 
+  /**
+   * Update property of seected child.
+   * @param {React.props.Children.child} child : input child.
+   * @param {number} index: index of current child.
+   * @returns {React.props.Children.child} : clone of input child with updated properties.
+   */
   const updateSelectedProp = (child, index) => {
     let childClone = child;
     if (selectedIndex === index) {
@@ -48,6 +67,12 @@ const Tabs = (incomingProps) => {
     return childClone;
   };
 
+  /**
+   * The method will return style for the tab passed as index.
+   * @param {React.props.Children} children : All tabs as children of tabs component.
+   * @param {number} currentIndex : index of child being considered.
+   * @returns {object} : Style object for current child.
+   */
   const getTabStyle = (children, currentIndex) => {
     let style = { ...tabStyle };
 
@@ -82,12 +107,18 @@ const Tabs = (incomingProps) => {
   );
 };
 
+// Default propertu of a tab.
 const tabDefaultProps = {
   name: "",
   selected: true,
   insideTabs: false,
 };
 
+/**
+ * A single Tab component.
+ * @param {React.Component.props} incomingProps
+ * @returns {React.Component} : Tab component.
+ */
 const Tab = (incomingProps) => {
   const props = { ...tabDefaultProps, ...incomingProps };
 

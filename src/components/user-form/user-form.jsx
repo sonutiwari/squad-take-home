@@ -3,7 +3,9 @@ import { Row, Col, Form, FormGroup, FormLabel } from "react-bootstrap";
 import CustomInput from "../custom-input/custom-input";
 import CustomSelect from "../custom-select/custom-select";
 import CheckBox from "../checkboxes/checkboxes";
+import { getObjectDataAsString } from "../utilities/utility-methods";
 
+// Default state of Price form.
 const defaultState = {
   email: "",
   name: "",
@@ -14,16 +16,8 @@ const defaultState = {
   noOfAgents: 0,
 };
 
-const getObjectDataAsString = (object) => {
-  let result = "";
-  for (const key in object) {
-    if (object[key]) {
-      result += `${key} `;
-    }
-  }
-  return result;
-};
 export default class UserForm extends Component {
+  // Object initialization for lead sources checkbox.
   leadSources = {
     zillow: false,
     realtor: false,
@@ -31,6 +25,7 @@ export default class UserForm extends Component {
     others: false,
   };
 
+  // Object initialization for how they know us checkboxes.
   howTheyKnowUs = {
     google: false,
     facebook: false,
@@ -38,6 +33,7 @@ export default class UserForm extends Component {
     friends: false,
     realClosers: false,
   };
+
   constructor(props) {
     super(props);
     this.state = defaultState;
@@ -51,6 +47,10 @@ export default class UserForm extends Component {
     this.howTheyKnowUs[key] = !this.howTheyKnowUs[key];
   };
 
+  /**
+   * The method will handle input chnages by user.
+   * @param {event} event
+   */
   handleInputChnage = (event) => {
     this.setState({
       ...this.state,
@@ -58,6 +58,10 @@ export default class UserForm extends Component {
     });
   };
 
+  /**
+   * Overrides default submit behaviour to our needs.
+   * @param {event} event
+   */
   handleFormSubmit = (event) => {
     event.preventDefault();
     let result = "";

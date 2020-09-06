@@ -177,7 +177,7 @@ export default class UserForm extends Component {
                   key={index}
                   id={key}
                   label={source[key]}
-                  onChange={() => this.handleLeadSourceChange(source)}
+                  onChange={() => this.handleLeadSourceChange(key)}
                 />
               );
             })}
@@ -202,7 +202,7 @@ export default class UserForm extends Component {
                 key={index}
                 id={key}
                 label={source[key]}
-                onChange={() => this.handleHowTheyKnowUsCB(source)}
+                onChange={() => this.handleHowTheyKnowUsCB(key)}
               />
             );
           })}

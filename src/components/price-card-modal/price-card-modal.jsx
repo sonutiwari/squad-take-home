@@ -17,7 +17,10 @@ export default function PriceCardModel(props) {
       size="lg"
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter" className="text-center">
+        <Modal.Title
+          id="contained-modal-title-vcenter"
+          className="text-centered"
+        >
           <h4>Get started with SquadVoice</h4>
         </Modal.Title>
       </Modal.Header>

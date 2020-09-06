@@ -91,7 +91,7 @@ const PriceCard = (incomingProps) => {
           >
             <center>
               <div
-                style={{ ...largeFont }}
+                style={{ ...largeFont, marginTop: "15px" }}
                 data-testid="price-per-live-transfer"
               >
                 {props.data.pricePerLiveTransfer}
@@ -128,6 +128,9 @@ const PriceCard = (incomingProps) => {
           <CustomButton
             solid={props.data.popular ? true : false}
             click={() => setModalState(true)}
+            style={{
+              marginTop: planName === CONSTANTS.ENTERPRISE ? "25px" : "0px",
+            }}
           >
             {planName === CONSTANTS.ENTERPRISE
               ? "Get In Touch"

@@ -29,7 +29,7 @@ const CustomButton = (props) => {
     <button
       data-testid={props["data-testid"]}
       style={{ ...defaultStyle, ...props.style }}
-      className={getClassNames()}
+      className={`${getClassNames()} mb-5`}
       onClick={props.click}
     >
       {props.children}

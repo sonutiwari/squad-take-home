@@ -70,6 +70,8 @@ const PriceCard = (incomingProps) => {
         <div className="body-container" style={{ backgroundColor }}>
           <div
             style={{
+              marginTop: "30px",
+              marginBottom: "-7px",
               display: planName === CONSTANTS.ENTERPRISE ? "block" : "none",
               height: "7em",
             }}
@@ -128,9 +130,6 @@ const PriceCard = (incomingProps) => {
           <CustomButton
             solid={props.data.popular ? true : false}
             click={() => setModalState(true)}
-            style={{
-              marginTop: planName === CONSTANTS.ENTERPRISE ? "25px" : "0px",
-            }}
           >
             {planName === CONSTANTS.ENTERPRISE
               ? "Get In Touch"

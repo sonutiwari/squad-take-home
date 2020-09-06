@@ -91,7 +91,7 @@ const PriceCard = (incomingProps) => {
           >
             <center>
               <div
-                style={{ ...largeFont, marginTop: "15px" }}
+                style={{ ...largeFont, marginTop: "30px" }}
                 data-testid="price-per-live-transfer"
               >
                 {props.data.pricePerLiveTransfer}

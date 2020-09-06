@@ -70,7 +70,7 @@ const PriceCard = (incomingProps) => {
           }}
         >
           <p className="enterprise-box">
-            Want mor than 80 qualified leads each month?
+            Want more than 80 qualified leads each month?
           </p>
         </div>
         <div
@@ -110,7 +110,10 @@ const PriceCard = (incomingProps) => {
             </div>
           </center>
         </div>
-        <CustomButton click={() => setModalState(true)}>
+        <CustomButton
+          solid={props.data.popular ? true : false}
+          click={() => setModalState(true)}
+        >
           {planName === CONSTANTS.ENTERPRISE
             ? "Get In Touch"
             : "Start Your Trial"}

@@ -28,7 +28,7 @@ export const tabs = {
   flexWrap: "wrap",
   marginBottom: "2rem",
   overflow: "hidden",
-  margin: "20px 30px",
+  margin: "80px 10px",
 };
 
 export const tabContent = {

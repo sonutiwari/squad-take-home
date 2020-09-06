@@ -3,6 +3,7 @@ import PriceCard from "../price-card/price-card";
 import { Tab, Tabs } from "../tab/tab";
 import mockdata from "../../mockdata/data.json";
 import CONSTANTS from "../utilities/constants";
+import "./price-page.scss";
 
 /**
  * The page will show main content of the website which includes different price ranges and Plans based on chosen categories.
@@ -45,13 +46,19 @@ export default class PricePage extends Component {
   };
 
   render() {
+    const headers = this.getTabHeaders();
     return (
       <Tabs>
-        {this.getTabHeaders().map((header, index) => (
+        {headers.map((header, index) => (
           <Tab
             key={index}
             name={header}
             selected={index === CONSTANTS.SELECTED_INDEX}
+            className={
+              index === 0 || index === headers.length - 1
+                ? "rounded-border"
+                : ""
+            }
           >
             {this.getTabData(header)
               .filter(
@@ -66,6 +73,7 @@ export default class PricePage extends Component {
                 data={{
                   planName: "Enterprise",
                 }}
+                className="price-card"
               />
             }
           </Tab>

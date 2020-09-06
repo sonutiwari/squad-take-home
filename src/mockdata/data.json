@@ -119,8 +119,7 @@
       "pricePerLiveTransfer": "$93",
       "totalQualifiedLeadPrice": "$5580",
       "totalPlatformPrice": "$699",
-      "finalPackagePrice": "$6279",
-      "popular": true
+      "finalPackagePrice": "$6279"
     }
   },
   {
@@ -131,7 +130,8 @@
       "pricePerLiveTransfer": "$90",
       "totalQualifiedLeadPrice": "$7200",
       "totalPlatformPrice": "$799",
-      "finalPackagePrice": "$7999"
+      "finalPackagePrice": "$7999",
+      "popular": true
     }
   },
   {

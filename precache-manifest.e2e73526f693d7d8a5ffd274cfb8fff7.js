@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ebb133f93d4c9ef1ceaf98e00d24d635",
+    "revision": "947768b3d0de55d883f14b09e990641d",
     "url": "/squad-take-home/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-take-home/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "78069bb228ec7bffd8a3",
+    "revision": "7561f25ce6bf7a8ce29e",
     "url": "/squad-take-home/static/css/main.99546d05.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-take-home/static/js/2.04126dd5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "78069bb228ec7bffd8a3",
-    "url": "/squad-take-home/static/js/main.4f8492a1.chunk.js"
+    "revision": "7561f25ce6bf7a8ce29e",
+    "url": "/squad-take-home/static/js/main.7c21b39e.chunk.js"
   },
   {
     "revision": "b8ebe0998049f2bea893",

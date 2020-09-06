@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/squad-take-home/static/css/main.99546d05.chunk.css",
-    "main.js": "/squad-take-home/static/js/main.b0322a6f.chunk.js",
-    "main.js.map": "/squad-take-home/static/js/main.b0322a6f.chunk.js.map",
+    "main.js": "/squad-take-home/static/js/main.4f8492a1.chunk.js",
+    "main.js.map": "/squad-take-home/static/js/main.4f8492a1.chunk.js.map",
     "runtime-main.js": "/squad-take-home/static/js/runtime-main.8f65adfb.js",
     "runtime-main.js.map": "/squad-take-home/static/js/runtime-main.8f65adfb.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/squad-take-home/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.04126dd5.chunk.js": "/squad-take-home/static/js/2.04126dd5.chunk.js",
     "static/js/2.04126dd5.chunk.js.map": "/squad-take-home/static/js/2.04126dd5.chunk.js.map",
     "index.html": "/squad-take-home/index.html",
-    "precache-manifest.3234b9cd07b025a2d1761f00c4c634f2.js": "/squad-take-home/precache-manifest.3234b9cd07b025a2d1761f00c4c634f2.js",
+    "precache-manifest.b7d7c83a3997c6e495279881822c8552.js": "/squad-take-home/precache-manifest.b7d7c83a3997c6e495279881822c8552.js",
     "service-worker.js": "/squad-take-home/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/squad-take-home/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.99546d05.chunk.css.map": "/squad-take-home/static/css/main.99546d05.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.04126dd5.chunk.js",
     "static/css/main.99546d05.chunk.css",
-    "static/js/main.b0322a6f.chunk.js"
+    "static/js/main.4f8492a1.chunk.js"
   ]
 }

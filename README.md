@@ -44,7 +44,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 - NodeJS version 12+ (tested on 12.18.3)
 - version of NPM with the node will be sufficient.
-- Browser (Program is tested on Chrome Version 85.0.4183.83 (Official Build) (64-bit) for MacOS and Safari on MacOS Catalina(will test it for other browsers and update here.))
+- Browser (Program is tested on Chrome Version 85.0.4183.83 (Official Build) (64-bit) for MacOS and Safari on MacOS Catalina, (Mobile)Chrome browser 85.0.4183.81 Android 10.(will test it for other browsers and update here.))
 
 ### Installing
 

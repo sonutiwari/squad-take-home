@@ -51,6 +51,10 @@ const PriceCard = (incomingProps) => {
     data: { planName },
   } = props;
 
+  const backgroundColor =
+    props.data.popular || planName === CONSTANTS.ENTERPRISE
+      ? "rgb(242, 242, 242"
+      : "fff";
   return (
     <>
       <div style={style} className="col-xs-12 col-md-3">
@@ -63,62 +67,75 @@ const PriceCard = (incomingProps) => {
         <div style={head} data-testid="plan-name">
           {planName}
         </div>
-        <div
-          style={{
-            display: planName === CONSTANTS.ENTERPRISE ? "block" : "none",
-            height: "7em",
-          }}
-        >
-          <p className="enterprise-box">
-            Want more than 80 qualified leads each month?
-          </p>
-        </div>
-        <div
-          className="container"
-          style={{
-            visibility:
-              planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
-          }}
-        >
-          <center>
-            <div style={{ ...largeFont }} data-testid="price-per-live-transfer">
-              {props.data.pricePerLiveTransfer}
-            </div>
-            <div style={smallFont}>Per Qualified lead</div>
-            <div style={separator} />
-            <div style={smallFont}> Qualified Leads Per Month</div>
-            <div style={mediumFont} data-testid="qualified-leads-per-month">
-              {props.data.qualifiedLeadsPerMonth}
-            </div>
-            <div style={separator} />
-            <div style={smallFont}>Platform Fee Per Month</div>
-            <div style={mediumFont} data-testid="total-platform-price">
-              {props.data.totalPlatformPrice}
-            </div>
-
-            <div
-              style={{
-                ...bottom,
-                ...mediumFont,
-                fontWeight: 600,
-                marginLeft: "-15px",
-                marginRight: "-15px",
-              }}
-              data-testid="final-package-price"
+        <div className="body-container" style={{ backgroundColor }}>
+          <div
+            style={{
+              display: planName === CONSTANTS.ENTERPRISE ? "block" : "none",
+              height: "7em",
+            }}
+          >
+            <p
+              className="enterprise-box text-center"
+              style={{ backgroundColor }}
             >
-              {props.data.finalPackagePrice}/mo
-            </div>
-          </center>
+              Want more than 80 qualified leads each month?
+            </p>
+          </div>
+          <div
+            className="container"
+            style={{
+              visibility:
+                planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
+              backgroundColor,
+            }}
+          >
+            <center>
+              <div
+                style={{ ...largeFont }}
+                data-testid="price-per-live-transfer"
+              >
+                {props.data.pricePerLiveTransfer}
+              </div>
+              <div style={smallFont}>Per Qualified lead</div>
+              <div style={separator} />
+              <div style={smallFont}> Qualified Leads Per Month</div>
+              <div style={mediumFont} data-testid="qualified-leads-per-month">
+                {props.data.qualifiedLeadsPerMonth}
+              </div>
+              <div style={separator} />
+              <div style={smallFont}>Platform Fee Per Month</div>
+              <div
+                style={{ ...mediumFont, marginBottom: "15px" }}
+                data-testid="total-platform-price"
+              >
+                {props.data.totalPlatformPrice}
+              </div>
+
+              <div
+                style={{
+                  ...bottom,
+                  ...mediumFont,
+                  fontWeight: 600,
+                  marginLeft: "-15px",
+                  marginRight: "-15px",
+                }}
+                data-testid="final-package-price"
+              >
+                {props.data.finalPackagePrice}/mo
+              </div>
+            </center>
+          </div>
+          <CustomButton
+            solid={props.data.popular ? true : false}
+            click={() => setModalState(true)}
+          >
+            {planName === CONSTANTS.ENTERPRISE
+              ? "Get In Touch"
+              : "Start Your Trial"}
+          </CustomButton>
         </div>
-        <CustomButton
-          solid={props.data.popular ? true : false}
-          click={() => setModalState(true)}
-        >
-          {planName === CONSTANTS.ENTERPRISE
-            ? "Get In Touch"
-            : "Start Your Trial"}
-        </CustomButton>
       </div>
+
       <PriceCardModal
         planName={planName}
         show={showModal}

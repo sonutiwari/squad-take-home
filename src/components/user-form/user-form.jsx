@@ -165,14 +165,22 @@ export default class UserForm extends Component {
         </Form.Row>
         <Form.Row>
           <FormGroup>
-            {["zillow", "realtor", "ylopo", "others"].map((source, index) => (
-              <CheckBox
-                key={index}
-                id={source}
-                label={source}
-                onChange={() => this.handleLeadSourceChange(source)}
-              />
-            ))}
+            {[
+              { zillow: "Zillow" },
+              { realtor: "Realtor" },
+              { ylopo: "Ylopo" },
+              { others: "Others" },
+            ].map((source, index) => {
+              const [key] = Object.keys(source);
+              return (
+                <CheckBox
+                  key={index}
+                  id={key}
+                  label={source[key]}
+                  onChange={() => this.handleLeadSourceChange(source)}
+                />
+              );
+            })}
           </FormGroup>
         </Form.Row>
 
@@ -181,16 +189,23 @@ export default class UserForm extends Component {
         </Form.Row>
 
         <Form.Row>
-          {["google", "facebook", "email", "friends", "realClosers"].map(
-            (source, index) => (
+          {[
+            { google: "Google" },
+            { facebook: "Facebook" },
+            { email: "Email" },
+            { friends: "Friends" },
+            { realClosers: "Real Closers" },
+          ].map((source, index) => {
+            const [key] = Object.keys(source);
+            return (
               <CheckBox
                 key={index}
-                id={source}
-                label={source}
+                id={key}
+                label={source[key]}
                 onChange={() => this.handleHowTheyKnowUsCB(source)}
               />
-            )
-          )}
+            );
+          })}
         </Form.Row>
         <Form.Row>
           <Form.Control

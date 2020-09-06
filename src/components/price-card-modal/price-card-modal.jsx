@@ -14,13 +14,9 @@ export default function PriceCardModel(props) {
       backdrop="static"
       keyboard={false}
       size="lg"
-      className="centered"
     >
       <Modal.Header closeButton>
-        <Modal.Title
-          id="contained-modal-title-vcenter"
-          style={{ margin: "-5px 200px" }}
-        >
+        <Modal.Title id="contained-modal-title-vcenter" className="text-center">
           <h4>Get started with SquadVoice</h4>
         </Modal.Title>
       </Modal.Header>

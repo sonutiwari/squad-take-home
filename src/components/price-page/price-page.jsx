@@ -59,15 +59,10 @@ export default class PricePage extends Component {
                   planName !== CONSTANTS.FILTER_PLAN_NAME
               )
               .map((data, index) => (
-                <PriceCard
-                  style={priceCardStyle}
-                  key={index}
-                  data={data.planDetails}
-                />
+                <PriceCard key={index} data={data.planDetails} />
               ))}
             {
               <PriceCard /* Enterprise Card which is an outlier. */
-                style={priceCardStyle}
                 data={{
                   planName: "Enterprise",
                 }}
@@ -79,8 +74,3 @@ export default class PricePage extends Component {
     );
   }
 }
-
-const priceCardStyle = {
-  flex: 1,
-  margin: "0 1rem",
-};

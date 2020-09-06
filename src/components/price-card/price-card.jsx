@@ -11,6 +11,7 @@ import {
   smallFont,
 } from "./price-card.style";
 import CONSTANTS from "../utilities/constants";
+import "./price-card.scss";
 
 // Set default values.
 const defaultProps = {
@@ -52,7 +53,7 @@ const PriceCard = (incomingProps) => {
 
   return (
     <>
-      <div style={style} className="col-sm-12 col-md-3">
+      <div style={style} className="col-xs-12 col-md-3">
         <PriceCardModal
           planName={planName}
           show={showModal}
@@ -62,104 +63,58 @@ const PriceCard = (incomingProps) => {
         <div style={head} data-testid="plan-name">
           {planName}
         </div>
-        <center>
-          <div style={{ ...largeFont }} data-testid="price-per-live-transfer">
-            {props.data.pricePerLiveTransfer}
-          </div>
-          <div
-            style={{
-              ...smallFont,
-              visibility:
-                planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
-            }}
-          >
-            Per Qualified lead
-          </div>
-
-          <div
-            style={{
-              ...separator,
-              visibility:
-                planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
-            }}
-          ></div>
-          {planName === CONSTANTS ? (
-            <div style={smallFont}>
-              <br />
+        <div
+          style={{
+            display: planName === CONSTANTS.ENTERPRISE ? "block" : "none",
+            height: "7em",
+          }}
+        >
+          <p className="enterprise-box">
+            Want mor than 80 qualified leads each month?
+          </p>
+        </div>
+        <div
+          className="container"
+          style={{
+            visibility:
+              planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
+          }}
+        >
+          <center>
+            <div style={{ ...largeFont }} data-testid="price-per-live-transfer">
+              {props.data.pricePerLiveTransfer}
             </div>
-          ) : (
-            ""
-          )}
-          <div style={smallFont}>
-            {planName === CONSTANTS.ENTERPRISE
-              ? "Want more than 80 qualified leads each month?"
-              : "Qualified Leads Per Month"}
-          </div>
-          <div
-            style={{
-              ...mediumFont,
-              visibility:
-                planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
-            }}
-            data-testid="qualified-leads-per-month"
-          >
-            {props.data.qualifiedLeadsPerMonth}
-          </div>
-          {planName === CONSTANTS ? (
-            <div style={smallFont}>
-              <br />
+            <div style={smallFont}>Per Qualified lead</div>
+            <div style={separator} />
+            <div style={smallFont}> Qualified Leads Per Month</div>
+            <div style={mediumFont} data-testid="qualified-leads-per-month">
+              {props.data.qualifiedLeadsPerMonth}
             </div>
-          ) : (
-            ""
-          )}
-          <div
-            style={{
-              ...separator,
-              visibility:
-                planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
-            }}
-          ></div>
+            <div style={separator} />
+            <div style={smallFont}>Platform Fee Per Month</div>
+            <div style={mediumFont} data-testid="total-platform-price">
+              {props.data.totalPlatformPrice}
+            </div>
 
-          <div
-            style={{
-              ...smallFont,
-              visibility:
-                planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
-            }}
-          >
-            Platform Fee Per Month
-          </div>
-          <div
-            style={{
-              ...mediumFont,
-              marginBottom: "0.1rem",
-              visibility:
-                planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
-            }}
-            data-testid="total-platform-price"
-          >
-            {props.data.totalPlatformPrice}
-          </div>
-
-          <div
-            style={{
-              ...bottom,
-              ...mediumFont,
-              fontWeight: 600,
-              visibility:
-                planName === CONSTANTS.ENTERPRISE ? "hidden" : "visible",
-            }}
-            data-testid="final-package-price"
-          >
-            {props.data.finalPackagePrice}/mo
-          </div>
-          <CustomButton click={() => setModalState(true)}>
-            {" "}
-            {planName === CONSTANTS.ENTERPRISE
-              ? "Get in touch "
-              : "Start Your Trial "}
-          </CustomButton>
-        </center>
+            <div
+              style={{
+                ...bottom,
+                ...mediumFont,
+                fontWeight: 600,
+                marginLeft: "-15px",
+                marginRight: "-15px",
+              }}
+              data-testid="final-package-price"
+            >
+              {props.data.finalPackagePrice}/mo
+            </div>
+          </center>
+        </div>
+        <CustomButton click={() => setModalState(true)}>
+          {planName === CONSTANTS.ENTERPRISE
+            ? "Get In Touch"
+            : "Start Your Trial"}
+        </CustomButton>
       </div>
       <PriceCardModal
         planName={planName}

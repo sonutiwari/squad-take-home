@@ -23,7 +23,7 @@ const CustomButton = (props) => {
   return (
     <button
       data-testid={props["data-testid"]}
-      style={{ ...defaultStyle, ...props.style, height: "3em" }}
+      style={{ ...defaultStyle, ...props.style }}
       className={getClassNames()}
       onClick={props.click}
     >

@@ -6,7 +6,6 @@ export const head = {
   marginBottom: "0.5rem",
   display: "flex",
   justifyContent: "center",
-  height: "3em",
 };
 
 export const bottom = { ...head };
@@ -15,25 +14,23 @@ export const largeFont = {
   fontSize: "2rem",
   fontWeight: "600",
   letterSpacing: "1px",
-  height: "1.2em",
 };
 
 export const mediumFont = {
   fontSize: "1.2rem",
   fontWeight: "500",
-  height: "3em",
-  marginTop: "1em",
+  marginTop: "-5px",
+  marginBottom: "0.5rem",
 };
 
 export const smallFont = {
   fontSize: "0.9rem",
-  height: "0.9em",
+  margin: "15px 0 15px 0",
 };
 
 export const separator = {
   borderBottom: "2px dashed lightgrey",
-  margin: "1rem 3rem",
-  height: "1em",
+  margin: "0 5px 0 5px",
 };
 
 export const popularPriceCard = {
@@ -42,5 +39,4 @@ export const popularPriceCard = {
   display: "flex",
   justifyContent: "center",
   padding: "1rem",
-  height: "3em",
 };

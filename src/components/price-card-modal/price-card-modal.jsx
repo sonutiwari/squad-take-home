@@ -1,6 +1,7 @@
 import React from "react";
 import { Modal, Container } from "react-bootstrap";
 import UserForm from "../user-form/user-form";
+import "./price-card.scss";
 
 /**
  * The function will render Price card.

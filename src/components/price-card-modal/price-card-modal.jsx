@@ -10,13 +10,14 @@ function PriceCardModel(props) {
       backdrop="static"
       keyboard={false}
       size="lg"
+      className="centered"
     >
       <Modal.Header closeButton>
         <Modal.Title
           id="contained-modal-title-vcenter"
-          style={{ margin: "auto" }}
+          style={{ margin: "-5px 200px" }}
         >
-          Get started with SquadVoice
+          <h4>Get started with SquadVoice</h4>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className="show-grid">

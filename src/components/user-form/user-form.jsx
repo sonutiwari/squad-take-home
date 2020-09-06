@@ -78,8 +78,8 @@ export default class UserForm extends Component {
     return (
       <Form onSubmit={this.handleFormSubmit}>
         <Row>
-          <h5>Plan Selected:</h5>
-          <p>{this.props.planName}</p>
+          <h5>Plan Selected: </h5>
+          <p className="ml-1">{this.props.planName}</p>
         </Row>
         <CustomInput
           title="Name"
@@ -129,7 +129,6 @@ export default class UserForm extends Component {
             name="totalLeads"
             value={this.state.totalLeads}
             onChange={this.handleInputChnage}
-            required
             title="Total leads in your CRM"
             options={["-", "0-10", "10-20", "20-30", "30-40"]}
             as={Col}
@@ -190,7 +189,16 @@ export default class UserForm extends Component {
           )}
         </Form.Row>
         <Form.Row>
-          <Form.Control type="submit" className="btn btn-primary" />
+          <Form.Control
+            type="submit"
+            className="btn mt-5"
+            style={{
+              width: "fit-content",
+              margin: "auto",
+              backgroundColor: "#ef5a35",
+              color: "#fff",
+            }}
+          />
         </Form.Row>
       </Form>
     );

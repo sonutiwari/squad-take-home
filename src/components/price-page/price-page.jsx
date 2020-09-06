@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import PriceCard from "../price-card/price-card";
 import { Tab, Tabs } from "../tab/tab";
-import mockdata from "../../mockdata/data.json";
 import CONSTANTS from "../utilities/constants";
 import "./price-page.scss";
-
+const DATA_URI =
+  "https://raw.githubusercontent.com/sonutiwari/squad-take-home/master/src/mockdata/data.json";
 /**
  * The page will show main content of the website which includes different price ranges and Plans based on chosen categories.
  */
@@ -23,7 +23,14 @@ export default class PricePage extends Component {
    * Set the data here, for this case we have static data.
    */
   componentDidMount() {
-    this.setState({ data: mockdata });
+    fetch(DATA_URI)
+      .then((data) => data.json())
+      .then((data) => {
+        this.setState({ data });
+      })
+      .catch((err) => {
+        console.error(err.message);
+      });
   }
 
   // Get tabs header text array

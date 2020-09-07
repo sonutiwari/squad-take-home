@@ -27,6 +27,7 @@
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
+- [Important Note](#important_note)
 
 ## 🧐 About <a name = "about"></a>
 
@@ -50,7 +51,13 @@ Follow these steps to install and run app:
 
 ```console
 git clone https://github.com/sonutiwari/squad-take-home.git
+```
+
+![Command Line Screenshot](./screenshots/clone_screenshot.png?raw=true "Git Clone")
+
+```console
 cd squad-take-home
+
 ```
 
 Alternatively, you can download the zip file and extract that into your working directory. Open command prompt there and follow the next steps.
@@ -102,3 +109,9 @@ Add additional notes about how to deploy this on a live system.
 - [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Bootstrap library.
 
 See also the list of [contributors](https://github.com/sonutiwari/squad-take-home/contributors) who participated in this project.
+
+## &#0; Important Note <a name = "important_note"></a>
+
+There seem to be some issue with latest 'react-scripts' version(3.1.4) in Windows
+So I have installed older(2.1.8) version of react-scripts locally.
+More about issue can be found [here](https://stackoverflow.com/questions/58603936/why-npm-start-is-throwing-events-js187-throw-er-unhandled-error-event-in)

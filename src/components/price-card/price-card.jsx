@@ -61,7 +61,7 @@ const PriceCard = (incomingProps) => {
         <PriceCardModal
           planName={planName}
           show={showModal}
-          onClose={() => setModalState(false)}
+          onHide={() => setModalState(false)}
         />
         <div style={getPopularCardStyle(props.data.popular)}>Most Popular!</div>
         <div style={head} data-testid="plan-name">
@@ -137,12 +137,6 @@ const PriceCard = (incomingProps) => {
           </CustomButton>
         </div>
       </div>
-
-      <PriceCardModal
-        planName={planName}
-        show={showModal}
-        onHide={() => setModalState(false)}
-      />
     </>
   );
 };

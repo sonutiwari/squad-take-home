@@ -27,10 +27,6 @@
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
@@ -73,7 +69,7 @@ If everything completed without error so far, you are ready to run the applicati
 npm start
 ```
 
-You can open your browser and give this URL [localhost](http://127.0.0.1:3000)
+You can open your browser and give this URL to see the result. [localhost](http://127.0.0.1:3000)
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
@@ -105,13 +101,4 @@ Add additional notes about how to deploy this on a live system.
 - [React-Bootstrap](https://react-bootstrap.github.io/) - React Bootstrap for bootstrap library.
 - [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Bootstrap library.
 
-## ✍️ Authors <a name = "authors"></a>
-
-- [@sonutiwari](https://github.com/sonutiwari) - Initial work.
-- [@varora1406](https://github.com/varora1406) - Got a lot of understanding from here.
-
 See also the list of [contributors](https://github.com/sonutiwari/squad-take-home/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- - [@kylelobo](https://github.com/kylelobo) - README template.

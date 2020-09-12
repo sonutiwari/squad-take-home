@@ -63,7 +63,12 @@ const PriceCard = (incomingProps) => {
           show={showModal}
           onHide={() => setModalState(false)}
         />
-        <div style={getPopularCardStyle(props.data.popular)}>Most Popular!</div>
+        <div
+          className="most-popular-div"
+          style={getPopularCardStyle(props.data.popular)}
+        >
+          Most Popular!
+        </div>
         <div style={head} data-testid="plan-name">
           {planName}
         </div>
